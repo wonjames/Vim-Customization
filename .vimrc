@@ -1,6 +1,5 @@
 "Color Stuff
-colorscheme personal 
-"See ~/.vim/colors/personal.vim for my own colorscheme
+colorscheme personal
 
 "If it wasn't explicitly stated to use default colors, use the ones I have
 "listed
@@ -25,6 +24,7 @@ set hlsearch		" highlights matches when searching for words
 "Set to enable 256 colors for vim to work in tmux using csApprox
 set t_Co=256
 autocmd FileType html :setlocal sw=2 ts=2 sts=2 " Two spaces for HTML files "
+autocmd FileType python :setlocal shiftwidth=4 tabstop=4 softtabstop=0
 
 "Scrolling starts 5 lines away from the top/bottom of the page
 if !&scrolloff
