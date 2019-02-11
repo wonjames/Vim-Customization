@@ -1,6 +1,6 @@
 "Color Stuff
 colorscheme personal
-
+autocmd FileType html colorscheme personal
 "If it wasn't explicitly stated to use default colors, use the ones I have
 "listed
 if !exists("g:syntax_on")
@@ -9,7 +9,7 @@ endif
 "------------------------------------------------------------------------------------
 "Setting things to make life easier
 set number		"sets line numbers
-set spell		"sets spell checker
+"set spell		"sets spell checker
 set splitbelow
 set splitright
 set clipboard=unnamedplus
@@ -55,5 +55,14 @@ endif
 
 " Press Space to turn off highlighting and clear any message already displayed.
 :nnoremap <silent> <Space> :nohlsearch<Bar>:echo<CR>
+ 
+" Adds a new line by pressing enter while in normal mode and stays in normal
+" mode
+:nnoremap <Enter> o<Space><Esc>
+
+" Allows Ctrl-Backspace to delete previous word in insert mode
+noremap! <C-BS> <C-w>
+noremap! <C-h> <C-w>
+
 "autocompletes the matching curly brace and auto-indents after hitting enter
 inoremap {<CR> {<CR>}<Esc>O
