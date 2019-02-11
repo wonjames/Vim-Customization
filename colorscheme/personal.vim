@@ -1,17 +1,21 @@
 set background=dark
 
+hi Normal ctermbg=NONE
+hi nonText ctermbg=NONE
 "Normal text
-hi Normal ctermbg=236 ctermfg=254
+hi Normal ctermbg=235 ctermfg=254
 
 "Comments like these
 hi Comment ctermfg=248 cterm=italic "gray
 
 "any constant terms
-hi Constant ctermfg=147 ctermbg=235
+hi Constant ctermfg=147 
 	hi String ctermfg=215
 	hi Character ctermfg=169
 
 hi Identifier ctermfg=blue
+
+hi mylangVariable ctermfg=red
 
 "int, double, char, this, etc
 hi Type ctermfg=80 "lightGreen, 156
