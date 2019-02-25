@@ -65,4 +65,4 @@ noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
 
 "autocompletes the matching curly brace and auto-indents after hitting enter
-inoremap {<CR> {<CR>}<Esc>O
+inoremap {<CR> {<CR>}<Esc>==O
